@@ -12,7 +12,8 @@ body {
     grid-template-rows: auto 1fr auto;
     gap: 20px;
     min-height: 100vh;
-    padding: 0; /* Remove extra padding from the container */
+    padding: 10px;
+    margin: 50px;
 }
 
 .header {
@@ -23,6 +24,8 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    margin: 0 -10px; 
+    width: calc(100% + 100px);
 }
 
 .header-content {
@@ -37,6 +40,7 @@ body {
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
+    object-fit: cover;
 }
 
 .header h1 {
@@ -47,7 +51,13 @@ body {
 
 .main-content {
     grid-column: 1 / 2;
-    padding: 20px; /* Adds padding to the main blog content */
+}
+
+.post-divider {
+    border: 0;
+    height: 1px;
+    background-color: #718096; 
+    margin: 20px 0;
 }
 
 .blog-post {
@@ -66,16 +76,14 @@ body {
 
 .blog-image-left {
     float: left;
-    margin: 15px 0;
+    margin: 0 15px 15px 0;
     width: 200px;
-    height: auto;
 }
 
 .blog-image-right {
     float: right;
-    margin: 15px;
+    margin: 0 0 15px 15px;
     width: 200px;
-    height: auto;
 }
 
 .sidebar {
@@ -83,7 +91,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px; /* Adds padding to the sidebar */
 }
 
 .about-section {
@@ -114,4 +121,6 @@ body {
     color: #FFFFFF;
     text-align: center;
     padding: 10px;
+    margin: 0 -10px; 
+    width: calc(100% + 100px); 
 }
