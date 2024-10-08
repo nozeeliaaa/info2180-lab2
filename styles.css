@@ -17,19 +17,16 @@ body {
 }
 
 .header {
-    grid-column: 1 / -1;
+    grid-column: 1 / -3;
     background-color: #63B3ED;
     color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    margin: 20px 0; /* Adds a 20px vertical gap */
-    width: 95%; /* Adjust width to make it slightly smaller than the container */
-    max-width: calc(100% - 40px); /* Adds max-width to prevent overflow */
-    border-radius: 10px; /* Optional: rounded edges for a softer look */
+    margin: 0 -10px; 
+    width: calc(100% + 100px);
 }
-
 
 .header-content {
     text-align: center;
